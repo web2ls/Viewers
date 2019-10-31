@@ -1,6 +1,7 @@
 import asyncComponent from '../components/AsyncComponent.js';
 
 import OHIF from '@ohif/core';
+import AssignmentList from '../assignmentList/AssignmentList';
 const { urlUtil: UrlUtil } = OHIF.utils;
 
 // Dynamic Import Routes (CodeSplitting)
@@ -41,7 +42,7 @@ const ROUTES_DEF = {
     },
     list: {
       path: ['/studylist', '/'],
-      component: StudyListRouting,
+      component: AssignmentList,
       condition: appConfig => {
         return appConfig.showStudyList !== undefined
           ? appConfig.showStudyList

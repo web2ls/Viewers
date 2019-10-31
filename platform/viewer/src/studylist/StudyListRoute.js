@@ -316,6 +316,7 @@ async function getStudyList(
   pageNumber,
   displaySize
 ) {
+  debugger;
   const {
     allFields,
     patientNameOrId,

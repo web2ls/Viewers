@@ -100,7 +100,7 @@ module.exports = (env, argv) => {
       // http2: true,
       // https: true,
       hot: true,
-      open: true,
+      open: false,
       port: 3000,
       host: '0.0.0.0',
       public: 'http://localhost:' + 3000,

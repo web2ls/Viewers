@@ -20,5 +20,8 @@
     "context": true,
     "Cypress": true,
     "assert": true
+  },
+  "rules": {
+    "no-console": "off"
   }
 }
