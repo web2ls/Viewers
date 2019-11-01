@@ -1,3 +1,18 @@
 .assignment-list {
+    width: 80%;
+    margin: 0 auto;
     color: #fff;
+    text-align: center;
+}
+
+.assignment-list ul {
+    list-style-type: none;
+}
+
+.assign-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    cursor: pointer;
 }
