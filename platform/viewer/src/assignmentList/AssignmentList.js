@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './AssignmentList.css';
+import { useHistory } from "react-router-dom";
+import Assignment from '../assignment/Assignment';
 
 export default class AssignmentList extends Component {
   constructor(props) {
@@ -21,17 +23,18 @@ export default class AssignmentList extends Component {
   }
 
   render() {
-    const assignmentList = this.state.assignments.map((item, index) => (
-      <li key={index} className="assign-item">
-        <div>{item.patient}</div>
-        <div>{item.modality}</div>
-        <div>{item.status}</div>
-      </li>
-    ))
+    const assignmentList = this.state.assignments.map(item =>
+      <Assignment key={item.stepId} item={item}/>
+    )
 
     return (
       <div className="assignment-list">
         <h3>Assignment List</h3>
+        <div className="table-header">
+          <div>Patient</div>
+          <div>Modality</div>
+          <div>Status</div>
+        </div>
         <ul className="assign-list">{assignmentList}</ul>
       </div>
     );
