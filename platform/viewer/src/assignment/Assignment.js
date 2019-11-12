@@ -6,7 +6,8 @@ export default function Assignment(props) {
 
   function enterToAssign(studyId) {
     console.log('Enter to Assign');
-    history.push(`/viewer/${studyId}`);
+    const studyUid = '1.3.12.2.1107.5.2.40.49105.30000019081215190600000000166';
+    history.push(`/viewer/${studyUid}`);
   }
 
   return (

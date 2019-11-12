@@ -1,6 +1,5 @@
 window.config = {
   // default: '/'
-  testConfig: 'HAHAHAHAHHAHA',
   routerBasename: '/',
   extensions: [],
   showStudyList: true,
@@ -8,9 +7,9 @@ window.config = {
     dicomWeb: [
       {
         name: 'DCM4CHEE',
-        wadoUriRoot: 'http://workflow.workflow.internal.braingarden.ai',
-        qidoRoot: 'http://workflow.workflow.internal.braingarden.ai',
-        wadoRoot: 'http://workflow.workflow.internal.braingarden.ai',
+        wadoUriRoot: 'https://dicomcloud.azurewebsites.net/wadors',
+        qidoRoot: 'https://dicomcloud.azurewebsites.net/qidors',
+        wadoRoot: 'https://dicomcloud.azurewebsites.net/wadors',
         qidoSupportsIncludeField: true,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',
