@@ -44,6 +44,7 @@ function ImageThumbnail(props) {
   };
 
   const fetchImagePromise = () => {
+    debugger;
     if (!cancelablePromise) {
       return;
     }
@@ -89,6 +90,7 @@ function ImageThumbnail(props) {
   }, [image.imageId]);
 
   useEffect(() => {
+    debugger;
     if (!image.imageId || image.imageId !== imageId) {
       purgeCancelablePromise();
       setImagePromise();

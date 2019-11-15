@@ -42,8 +42,8 @@ const ROUTES_DEF = {
     },
     list: {
       path: ['/studylist', '/'],
-      // component: AssignmentList,
-      component: StudyListRouting,
+      component: AssignmentList,
+      // component: StudyListRouting,
       condition: appConfig => {
         return appConfig.showStudyList !== undefined
           ? appConfig.showStudyList

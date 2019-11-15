@@ -7,12 +7,12 @@ window.config = {
     dicomWeb: [
       {
         name: 'DCM4CHEE',
-        wadoUriRoot: 'https://dicomcloud.azurewebsites.net/wadors',
-        qidoRoot: 'https://dicomcloud.azurewebsites.net/qidors',
-        wadoRoot: 'https://dicomcloud.azurewebsites.net/wadors',
-        qidoSupportsIncludeField: true,
-        imageRendering: 'wadors',
-        thumbnailRendering: 'wadors',
+        wadoUriRoot: 'http://localhost:4000/wado',
+        qidoRoot: 'http://localhost:4000/dicom-web',
+        wadoRoot: 'http://localhost:4000/hernya',
+        qidoSupportsIncludeField: false,
+        imageRendering: 'wadouri',
+        thumbnailRendering: 'wadouri',
         enableStudyLazyLoad: true,
       },
     ],
