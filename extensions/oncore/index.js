@@ -56,7 +56,7 @@ const toolbarModule = {
     {
       id: 'Custom',
       label: 'Custom',
-      icon: 'custom-icon',
+      icon: 'level',
       CustomComponent: Test,
     }
   ],

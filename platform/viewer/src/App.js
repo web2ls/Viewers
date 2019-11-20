@@ -53,8 +53,7 @@ const hotkeysManager = new HotkeysManager(commandsManager);
 const servicesManager = new ServicesManager();
 const extensionManager = new ExtensionManager({
   commandsManager,
-  servicesManager,
-  Oncore
+  servicesManager
 });
 // ~~~~ END APP SETUP
 
