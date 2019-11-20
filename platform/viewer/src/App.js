@@ -3,6 +3,8 @@ import { hot } from 'react-hot-loader/root';
 // TODO: This should not be here
 import './config';
 
+import * as Oncore from '../../../extensions/oncore/index';
+
 import {
   CommandsManager,
   ExtensionManager,
@@ -52,6 +54,7 @@ const servicesManager = new ServicesManager();
 const extensionManager = new ExtensionManager({
   commandsManager,
   servicesManager,
+  Oncore
 });
 // ~~~~ END APP SETUP
 

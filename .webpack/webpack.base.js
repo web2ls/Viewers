@@ -29,12 +29,14 @@ module.exports = (env, argv, { SRC_DIR, DIST_DIR }) => {
 
   const config = {
     mode: isProdBuild ? 'production' : 'development',
-    devtool: isProdBuild ? 'source-map' : 'cheap-module-eval-source-map',
+    devtool: 'cheap-module-eval-source-map',
+    // devtool: isProdBuild ? 'source-map' : 'cheap-module-eval-source-map',
     entry: {
       app: `${SRC_DIR}/index.js`,
     },
     optimization: {
-      minimize: isProdBuild,
+      minimize: false,
+      // minimize: isProdBuild,
       sideEffects: true,
     },
     context: SRC_DIR,
