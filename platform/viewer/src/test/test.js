@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Test = () => {
-  return (
-    <div>TETETETETETETETE</div>
-  )
+class Test extends Component{
+  handleClick = event => {
+    console.log('Comcponent click');
+  }
+
+  render() {
+    return (
+      <div onClick={this.handleClick}>test</div>
+    )
+  }
 }
+
 
 export default Test;

@@ -14,7 +14,7 @@ const definitions = {
   }
 }
 
-export default {
+const oncoreExtension =  {
   id: 'oncore',
   // getCommandsModule() {
   //   return {
@@ -62,3 +62,5 @@ const toolbarModule = {
   ],
   defaultContext: 'ACTIVE_VIEWPORT::CORNERSTONE'
 }
+
+export default oncoreExtension;

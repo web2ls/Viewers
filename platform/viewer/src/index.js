@@ -26,6 +26,7 @@ import OHIFVTKExtension from '@ohif/extension-vtk';
 import OHIFDicomHtmlExtension from '@ohif/extension-dicom-html';
 import OHIFDicomMicroscopyExtension from '@ohif/extension-dicom-microscopy';
 import OHIFDicomPDFExtension from '@ohif/extension-dicom-pdf';
+import oncoreExtension from '../../../extensions/oncore';
 
 // Default Settings
 let config = {};
@@ -40,6 +41,7 @@ if (window) {
     OHIFDicomHtmlExtension,
     OHIFDicomMicroscopyExtension,
     OHIFDicomPDFExtension,
+    oncoreExtension,
   ];
 }
 
