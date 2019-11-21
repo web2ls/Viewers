@@ -1,4 +1,7 @@
 import Test from '@ohif/viewer/src/test/test';
+import OncorePanel from '@ohif/viewer/src/oncorePanel/oncorePanel';
+import OncoreViewportRoi from '@ohif/viewer/src/oncoreViewportRoi/OncoreViewportRoi';
+import OncoreToolbar from '@ohif/viewer/src/oncoreToolbar/OncoreToolbar';
 
 const actions = {
   logger: () => {
@@ -31,6 +34,10 @@ const oncoreExtension =  {
 
   getPanelModule() {
     return panelModule;
+  },
+
+  getViewportModule() {
+    return OncoreViewportRoi;
   }
 }
 
@@ -45,7 +52,7 @@ const panelModule = {
   components: [
     {
       id: 'segment-panel',
-      component: Test,
+      component: OncorePanel,
     },
   ],
   defaultContext: ['VIEWER'],
@@ -57,10 +64,14 @@ const toolbarModule = {
       id: 'Custom',
       label: 'Custom',
       icon: 'level',
-      CustomComponent: Test,
+      CustomComponent: OncoreToolbar,
     }
   ],
   defaultContext: 'ACTIVE_VIEWPORT::CORNERSTONE'
+}
+
+const viewportModule = {
+  CustomComponent: Test
 }
 
 export default oncoreExtension;
